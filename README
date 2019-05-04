@@ -1,0 +1,31 @@
+- These files are designed to be run in a Unix/Linux environment
+
+- From the commandline, compile from the same directory as this file using command:
+	javac *.java
+
+- Run Key_setup using command:
+	java Key_setup
+
+- Run Encryption using command:
+	java Encryption
+
+- Run Decryption using command:
+	java Decryption
+
+- General Notes:
+   - All programs are to be run with no arguments.
+
+   - To ensure proper execution, program run order should be:
+     Key_setup -> Encryption -> Decryption
+
+   - Key_setup has no prerequisite files
+	- Runtime is a little slow because I've chosen p and q to be 250 digits each
+
+   - Encryption relies on existance of:
+	- public_key
+	- message
+
+   - Decryption relies on existence of:
+	- public_key
+	- private_key
+	- ciphertext
